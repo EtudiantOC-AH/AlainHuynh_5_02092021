@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+}
+
+.container {
+    width: 95vw;
+    margin: auto;
+    max-width: 1280px;
+}
+
+header {
+    height: 5rem;
+    background-color: #DCDCDC;
+    display: flex;
+    font-size: 1.5em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu p {
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.shop:hover {
+    border-bottom: 2px solid black;
+    line-height: 1px;
+}
+
+.hero {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.produits {
+    height: 40rem;
+}
+
+.produits h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+main {
+    background-color: #DCDCDC;
+    display: flex;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 5rem;
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85%;
+}
+
+@media screen and (max-width: 575px) {
+    footer ul {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    footer {
+        height: auto;
+    }
+}
