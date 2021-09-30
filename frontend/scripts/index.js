@@ -10,7 +10,7 @@ fetch('http://localhost:3000/api/teddies')
         <img class="img" src="${teddy.imageUrl}" />
         <h3 class="name">${teddy.name}</h3>
         <p class="price">${teddy.price / 100}€</p>
-        <a href="produit.html?id=${teddy.id}"> Voir le produit </a>
+        <a href="produit.html?id=${teddy._id}"> Voir le produit </a>
       </div>
     `
     })

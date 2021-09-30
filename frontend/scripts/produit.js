@@ -1,5 +1,5 @@
 let params = new URL(document, location).searchParams;
-let id = params.get("id");
+let id = params.get("_id");
 
 fetch('http://localhost:3000/api/teddies/${id}')
   .then((response) => response.json())
