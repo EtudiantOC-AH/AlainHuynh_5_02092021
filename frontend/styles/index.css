@@ -67,17 +67,55 @@ a {
     color: white;
 }
 
-main {
-    background-color: #DCDCDC;
+.produits {
+    height: auto;
 }
 
-.produits {
-    height: 40rem;
-    
-}
 .produits h2 {
     font-size: 2em;
     text-align: center;
+}
+
+.card {
+    width: 30%;
+    border-radius: 25px;
+    margin: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: #c1b0f5;
+}
+
+.name {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.price {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card a {
+    margin-bottom: 30px;
+    margin-left: 110px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ff8e00;
+    width: 40%;
+    font-size: 1.5em;
+    line-height: 45px;
+    border-radius: 35px;
+}
+
+#productList {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -95,6 +133,9 @@ footer ul {
 }
 
 @media screen and (max-width: 575px) {
+    .card {
+        width: 100%;
+    }
     footer ul {
         justify-content: space-between;
         flex-direction: column;
